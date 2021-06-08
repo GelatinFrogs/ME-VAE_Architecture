@@ -14,7 +14,9 @@ The implementation contained in this repository is only a base version containin
 
 <p align="center">
   Architectures schematic and improved results from ME-VAE
-  
+</p>
+
+<p align="center">
   <img src='assets/GithubFig2.png' width='250'/> <img src='assets/GithubFig3.png' width='400'/>
 </p>
 
