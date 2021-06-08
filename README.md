@@ -14,6 +14,10 @@ The implementation contained in this repository is only a base version containin
 <p align='center'>
   <img src='assets/GithubFig2.png' width='250'/>
 </p> 
+<p align='center'>
+  <img src='assets/GithubFig3.png' width='250'/>
+</p> 
+
 
 ## Prerequisites
 - Linux or macOS
