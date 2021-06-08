@@ -4,7 +4,7 @@ This is a base implementation of the Multi-Encoder Variational Autoencoder (ME-V
 This implementation is published and citable in the BioRxiv her: https://www.biorxiv.org/content/10.1101/2021.04.22.441005v2
 
 <p align='center'>
-  Example of standard VAE model only extracting dominant uninformative features (rotation and polar orientation).
+  Example of standard VAE model only extracting dominant uninformative features (rotation and polar orientation)
   <img src='assets/GithubFig1.png' width='450'/>
 </p> 
 
@@ -14,6 +14,7 @@ The implementation contained in this repository is only a base version containin
 
 <p align="center">
   Architectures schematic and improved results from ME-VAE
+  
   <img src='assets/GithubFig2.png' width='250'/> <img src='assets/GithubFig3.png' width='400'/>
 </p>
 
