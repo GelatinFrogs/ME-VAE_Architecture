@@ -4,7 +4,7 @@ This is a base implementation of the Multi-Encoder Variational Autoencoder (ME-V
 This implementation is published and citable in the BioRxiv her: https://www.biorxiv.org/content/10.1101/2021.04.22.441005v2
 
 <p align='center'>
-  <img src='assets/GithubFig1.png' width='600'/>
+  <img src='assets/GithubFig1.png' width='450'/>
 </p> 
 
 ## Method
