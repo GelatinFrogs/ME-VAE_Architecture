@@ -15,7 +15,7 @@ The principle behind the ME-VAE is to use several parallel encoding blocks, each
 The implementation contained in this repository is only a base version containing two parallel encoding blocks; however, the model can be expanded to accompany the number of features that the analyst desires by adding additional encoding blocks and image pairs (as was done in the paper listed above). This base implementation does not contain image generators to create randomly transformed images on they fly with respect to specific features. Generators should be designed specifically for the needs of the analyst/dataset and the features being removed. The dataset contained here is a  small example of segmented single channel single cell images processed from the Lincs Consortium Dataset, although the model can handle multiplex images containing 40+ channels. Image pairs have already been split into directories with transformations applied for ease of use. This pipeline is built upon the ImageVAE pipeline created by Geoffrey Schau here: https://github.com/schaugf/ImageVAE
 
 <p align="center">
-  Architectures schematic and improved results from ME-VAE
+  Architecture schematic and improved results from ME-VAE
 </p>
 
 <p align="center">
