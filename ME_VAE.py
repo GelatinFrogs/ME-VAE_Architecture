@@ -101,7 +101,7 @@ class MEVAE():
         filters = self.nfilters
         kernel_size = self.kernel_size
         for i in range(self.nlayers):
-            filters *= 2
+            #filters *= 2
             x1 = Conv2D(filters=filters,
                        kernel_size=kernel_size,
                        activation='relu',
@@ -128,7 +128,7 @@ class MEVAE():
         filters = self.nfilters
         kernel_size = self.kernel_size
         for i in range(self.nlayers):
-            filters *= 2
+            #filters *= 2
             x2 = Conv2D(filters=filters,
                        kernel_size=kernel_size,
                        activation='relu',
@@ -158,7 +158,7 @@ class MEVAE():
                                 activation='relu',
                                 strides=1,
                                 padding='same')(d1)
-            filters //= 2
+            #filters //= 2
         
         
         outputs = Conv2DTranspose(filters=input_shape[2],
