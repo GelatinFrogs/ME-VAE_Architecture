@@ -101,12 +101,13 @@ class MEVAE():
         filters = self.nfilters
         kernel_size = self.kernel_size
         for i in range(self.nlayers):
-            #filters *= 2
+            
             x1 = Conv2D(filters=filters,
                        kernel_size=kernel_size,
                        activation='relu',
-                       strides=1,
+                       strides=2,
                        padding='same')(x1)
+            filters *= 2
         
         # shape info needed to build decoder model
         shape = K.int_shape(x1)
@@ -128,12 +129,13 @@ class MEVAE():
         filters = self.nfilters
         kernel_size = self.kernel_size
         for i in range(self.nlayers):
-            #filters *= 2
+            
             x2 = Conv2D(filters=filters,
                        kernel_size=kernel_size,
                        activation='relu',
-                       strides=1,
+                       strides=2,
                        padding='same')(x2)
+            filters *= 2
             
         x2 = Flatten()(x2)
         x2 = Dense(self.inter_dim, activation='relu')(x2)
@@ -156,9 +158,9 @@ class MEVAE():
             d1 = Conv2DTranspose(filters=filters,
                                 kernel_size=kernel_size,
                                 activation='relu',
-                                strides=1,
+                                strides=2,
                                 padding='same')(d1)
-            #filters //= 2
+            filters //= 2
         
         
         outputs = Conv2DTranspose(filters=input_shape[2],
