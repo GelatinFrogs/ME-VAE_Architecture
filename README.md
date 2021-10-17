@@ -19,7 +19,7 @@ The implementation contained in this repository is only a base version containin
 </p>
 
 <p align="center">
-  <img src='assets/GithubFig2.png' width='250'/>
+  <img src='assets/GithubFig2.png' width='500'/>
   
   <img src='assets/GithubFig3.png' width='1400'/>
 </p>
@@ -31,7 +31,7 @@ The implementation contained in this repository is only a base version containin
 - Tested on Python 3.7.3
 
 ## Example Models and Data
-- Pre-built models for Standard VAE, B-VAE, invariant C-VAE, and ME-VAE as well as set of example images (correcting for size/rotation and polar orientation) are available here: https://zenodo.org/record/5574622
+- Pre-trained models for Standard VAE, B-VAE, invariant C-VAE, and ME-VAE as well as set of example images (correcting for size/rotation and polar orientation) are available here: https://zenodo.org/record/5574622
 
 
 
