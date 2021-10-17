@@ -33,7 +33,8 @@ The implementation contained in this repository is only a base version containin
 - NVIDIA GPU (memory suitable for image size) + CUDA cuDNN
 - Tested on Python 3.7.3
 
-
+## Example Models and Data
+- Pre-built models for Standard VAE, B-VAE, invariant C-VAE, and ME-VAE as well as set of example images are available here: https://zenodo.org/record/5574622
 
 
 
