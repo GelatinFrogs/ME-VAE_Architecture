@@ -1,3 +1,6 @@
+
+##[Currently being updated for Paper Revision. New trained models being uploaded. Check back soon.]
+
 # Base ME-VAE Architecture Implementation
 ## Introduction
 This is a base implementation of the Multi-Encoder Variational Autoencoder (ME-VAE). Uninformative features, especially transformational image features, present a problem for feature extraction in single cell images. It can be hard to disentangle these uninformative features from the output of a conventional VAE. This architecture allows the analyst to remove several uninformative/undesired features simultaneously to improve downstream analysis.
