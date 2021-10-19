@@ -7,7 +7,7 @@ This implementation is published and citable in the BioRxiv here: https://www.bi
   Example of standard VAE model only extracting dominant uninformative features (rotation and polar orientation)
 </p> 
 <p align='center'>
-  <img src='assets/GithubFig1.png' width='450'/>
+  <img src='assets/GithubFig1.png' width='600'/>
 </p> 
 
 ## Method
