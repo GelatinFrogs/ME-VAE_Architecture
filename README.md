@@ -19,7 +19,7 @@ The implementation contained in this repository is only a base version containin
 </p>
 
 <p align="center">
-  <img src='assets/GithubFig2.png' width='500'/>
+  <img src='assets/GithubFig2.png' width='1400'/>
   
   <img src='assets/GithubFig3.png' width='1400'/>
 </p>
