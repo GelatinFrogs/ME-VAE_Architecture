@@ -330,41 +330,6 @@ class MEVAE():
         """ encode data with trained model
         """
         
-        print('encoding training data...')
-        test_datagen = ImageDataGenerator(rescale = 1./(2**self.image_res - 1))
-        
-        if self.nchannel == 1:
-            test_generator1 = test_datagen.flow_from_directory(
-                self.data_dir,
-                target_size = (self.image_size, self.image_size),
-                batch_size = 1,
-                color_mode = 'grayscale',
-                shuffle = False,
-                class_mode = 'input')
-            
-            test_generator2 = test_datagen.flow_from_directory(
-                self.input2_dir,
-                target_size = (self.image_size, self.image_size),
-                batch_size = 1,
-                color_mode = 'grayscale',
-                shuffle = False,
-                class_mode = 'input')
-            
-        elif self.nchannel == 3:
-            test_generator = test_datagen.flow_from_directory(
-                self.data_dir,
-                target_size = (self.image_size, self.image_size),
-                batch_size = 1,
-                color_mode = 'rgb',
-                shuffle = False,
-                class_mode = 'input')
-        
-        else:
-                #DataGenerator Goes Here
-                raise ValueError('Generator for larger image sizes not included here. Implement for further use according to needs and specifications.')
-            
-
-       
         print('Encoding with Encoder1')
         encoded1= self.encoder1.predict(self.input1_data)
         print('Encoding with Encoder2')
