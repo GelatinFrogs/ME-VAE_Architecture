@@ -30,6 +30,12 @@ The implementation contained in this repository is only a base version containin
 - NVIDIA GPU (memory suitable for image size) + CUDA cuDNN
 - Tested on Python 3.7.3
 
+## Example Run Command
+```bash
+python main.py --data_dir "InputImages1/" --input2_dir "InputImages2/" --out1_dir "OutputImages/" --save_dir "Outputs/" --image_size 128 --latent_dim 32 --batch_size 10 --epochs 10 --verbose 1
+```
+
+
 ## Example Models and Data
 - Pre-trained models for Standard VAE, B-VAE, invariant C-VAE, and ME-VAE as well as set of example images (correcting for size/rotation and polar orientation) are available here: https://zenodo.org/record/5574622
 
