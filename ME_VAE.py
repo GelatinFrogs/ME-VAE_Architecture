@@ -250,7 +250,8 @@ class MEVAE():
         #Note: Datagenerator including on the fly rotation, orientation, and size transformations not included here. Implement according to needs and use to load images.
     
         print('Loading Input1 Images')
-        imageList=sorted(glob.glob( './'+self.data_dir+'train/*'))
+        imageList=sorted(glob.glob(os.path.join(self.data_dir,'train', '*')))
+        
         data = []
         for imagePath in imageList:
                 image = imread(imagePath)
@@ -260,7 +261,7 @@ class MEVAE():
         self.input1_data = np.array(data, dtype="float") / 255.0
             
         print('Loading Input2 Images')
-        imageList=sorted(glob.glob(  './'+self.input2_dir+'train/*'))
+        imageList=sorted(glob.glob(os.path.join(input2_dir,'train', '*')))
         data = []
         for imagePath in imageList:
                 image = imread(imagePath)
@@ -271,7 +272,7 @@ class MEVAE():
                                  
                                  
         print('Loading Output Images')
-        imageList=sorted(glob.glob(  './'+self.out1_dir+'train/*'))
+        imageList=sorted(glob.glob(os.path.join(out1_dir,'train', '*')))
         data = []
         for imagePath in imageList:
                 image = imread(imagePath)
@@ -334,7 +335,7 @@ class MEVAE():
         encoded1= self.encoder1.predict(self.input1_data)
         print('Encoding with Encoder2')
         encoded2= self.encoder2.predict(self.input2_data)
-        self.file_names = sorted(list(glob.glob(self.data_dir + '*')))    
+        self.file_names = sorted(list(glob.glob(os.path.join(self.data_dir,'train', '*'))))  
            
          # save generated filename
         fnFile = open(os.path.join(self.save_dir, 'filenames.csv'), 'w')
