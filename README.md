@@ -39,8 +39,8 @@ python main.py --data_dir "InputImages1/" --input2_dir "InputImages2/" --out1_di
 ## Example Models and Data
 - Pre-trained models for Standard VAE, B-VAE, invariant C-VAE, and ME-VAE as well as set of example images (correcting for size/rotation and polar orientation) are available here: https://zenodo.org/record/5574622
 
-
-
+## License
+ This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 
 
